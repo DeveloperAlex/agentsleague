@@ -12,7 +12,6 @@ Welcome to the Enterprise Agents track! In this challenge, you will build intell
 > 
 > | Requirement | Description |
 > |-------------|-------------|
-> | 💻 **Laptop** | Bring your own laptop with your preferred development environment |
 > | 🎫 **Microsoft 365 Copilot License** | You need an active Microsoft 365 Copilot license to test and deploy agents |
 > | 🏢 **Tenant with Sideloading Enabled** | Access to a Microsoft 365 tenant where you can sideload custom apps for testing |
 > | ☁️ **Azure Subscription** | Required to create resources for Custom Engine Agents (CEA) |
@@ -221,7 +220,6 @@ Build agents using the low-code/no-code Microsoft Copilot Studio platform:
 - ❌ Customer data or personally identifiable information (PII)
 - ❌ Confidential or proprietary company information
 - ❌ Internal business processes or sensitive organizational data
-- ❌ Pre-release product information under NDA
 - ❌ Real production configurations or internal system details
 
 ### Enterprise Security Best Practices
