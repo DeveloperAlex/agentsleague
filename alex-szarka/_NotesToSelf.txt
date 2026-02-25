@@ -1,0 +1,4 @@
+uv init
+uv venv
+.\.venv\Scripts\activate // in powershell
+
