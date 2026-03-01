@@ -1,4 +1,17 @@
 .env
+.env.*
+!.env.example
 .venv/
 __pycache__/
 *.pyc
+*.7z
+
+# IDE
+.vscode/
+.idea/
+
+# Azure
+.azure/
+**/.secrets/
+*.pem
+*.key

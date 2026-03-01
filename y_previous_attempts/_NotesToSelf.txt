@@ -1,0 +1,36 @@
+uv init
+uv venv
+.\.venv\Scripts\activate // in powershell
+PS C:\_code\agentsleague\alex-szarka> & c:\_code\agentsleague\alex-szarka\.venv\Scripts\Activate.ps1
+(alex-szarka) PS C:\_code\agentsleague\alex-szarka>
+az login
+
+To run locally:
+cd c:\_code\agentsleague\alex-szarka
+copy .env.example .env   # fill in FOUNDRY_PROJECT_ENDPOINT + FOUNDRY_MODEL_DEPLOYMENT_NAME
+.\.venv\Scripts\python.exe main.py   # starts HTTP server on port 8088
+
+Docker:
+docker init # Didn't do this - but it'd setup a lot of this for us.
+PS C:\_code\agentsleague> cd .\alex-szarka\
+docker build -t agentsleague .
+docker run -p 9000:9000 agentsleague  # 1st 9000 is computer port, 2nd is container's port.
+
+Docker build gives:
+=> ERROR [6/6] RUN uv pip install --system --pre -r requirements.txt
+
+
+pppppppppppppppppppppppppppppppppppppppppppppppp
+Prompt used for Claude Sonnet 4.6:
+Look at this png and determine what python code we need to put into the alex-szarka folder. The code will be multi-agentic using Microsoft Foundry and Microsoft Agent Framework. Make a plan before executing steps to create.
+
+Let's include Microsoft Learn MCP
+
+use uv instead of pip
+
+Microsoft Agent Framework is a pre release. Allow pre release python modules
+
+Use uv instead of pip
+pppppppppppppppppppppppppppppppppppppppppppppppp
+
+

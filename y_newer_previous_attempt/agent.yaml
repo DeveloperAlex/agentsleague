@@ -1,0 +1,20 @@
+name: student-cert-readiness
+description: >
+  Multi-agent system that helps students prepare for Microsoft certification exams.
+  Includes learning path curation, study plan generation, engagement coaching,
+  readiness assessment with human-in-the-loop, and exam planning — all backed
+  by Microsoft Foundry agents and the Microsoft Learn MCP server.
+
+template:
+  kind: hosted
+  protocols:
+    - protocol: responses
+      version: "1"
+  environment_variables:
+    - name: FOUNDRY_PROJECT_ENDPOINT
+      description: Microsoft Foundry project endpoint URL
+    - name: FOUNDRY_MODEL_DEPLOYMENT_NAME
+      description: Model deployment name (e.g. gpt-5-nano)
+    - name: MCP_TOOL_NAME
+      description: Name of the Microsoft Learn MCP tool in Foundry
+      default: mslearn-mcp-server
