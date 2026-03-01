@@ -1,0 +1,30 @@
+# Student Certification Readiness Multi-Agent Workflow
+name: student-readiness-workflow
+description: >
+  A multi-agent workflow that guides students through certification preparation.
+  Dispatches topics to a sequential subworkflow (Learning Path Curator, Study Plan
+  Generator, Engagement Agent), then gates readiness assessment with human-in-the-loop
+  approval before routing to Exam Planner.
+metadata:
+  authors:
+    - Alex Szarka
+  tags:
+    - Azure AI AgentServer
+    - Microsoft Agent Framework
+    - Workflows
+    - Human-in-the-Loop
+    - Multi-Agent
+template:
+  name: student-readiness-workflow
+  kind: hosted
+  protocols:
+    - protocol: responses
+  environment_variables:
+    - name: FOUNDRY_PROJECT_ENDPOINT
+      value: ${FOUNDRY_PROJECT_ENDPOINT}
+    - name: FOUNDRY_MODEL_DEPLOYMENT_NAME
+      value: ${FOUNDRY_MODEL_DEPLOYMENT_NAME}
+resources:
+  - kind: model
+    id: gpt-4.1-mini
+    name: chat

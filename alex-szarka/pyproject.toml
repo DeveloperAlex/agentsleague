@@ -6,14 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "agent-framework",
-    "azure-ai-agentserver-agentframework",
-    "azure-ai-projects",
-    "azure-ai-agents",
+    "azure-ai-agentserver-agentframework>=1.0.0b14",
+    "azure-ai-projects>=2.0.0b1",
     "azure-identity",
-    "httpx",
-    "openai",
     "python-dotenv",
-    "starlette<1.0",
 ]
 
 [tool.uv]
